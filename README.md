@@ -1,6 +1,3 @@
-Here's an optimized version of the README with improved formatting for better readability:
-
-````markdown
 # 🚀 Steam 游戏评论情感分析
 
 本项目是一个完整的机器学习流程，旨在对 Steam 游戏评论进行情感倾向（好评/差评）的分析与预测。项目涵盖了从数据爬取、文本预处理、特征工程到模型训练与评估的全过程。
@@ -38,7 +35,7 @@ Here's an optimized version of the README with improved formatting for better re
 ├── main.py                       # 项目主入口
 ├── requirements.txt              # Python 依赖库
 └── README.md                     # 项目说明
-````
+
 
 ## ⚙️ 环境配置与安装
 
