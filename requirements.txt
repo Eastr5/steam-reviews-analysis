@@ -1,0 +1,21 @@
+# Data manipulation and numerical operations
+pandas
+numpy
+scipy
+
+# Machine Learning Core
+scikit-learn
+xgboost
+
+# Natural Language Processing
+jieba
+snownlp
+
+# Data Scraping
+requests
+
+# Data Visualization
+matplotlib
+seaborn
+
+openpyxl

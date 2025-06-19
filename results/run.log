@@ -1,0 +1,94 @@
+2025-06-19 20:39:15,407 - __main__ - INFO - 从 data/labeled_comments.csv 加载数据...
+2025-06-19 20:39:15,454 - __main__ - INFO - 成功加载数据，数据形状为: (9139, 7)
+2025-06-19 20:39:15,463 - __main__ - INFO - 数据预览:
+         用户名               推荐  游戏时长                                                 评论  政治敏感  评论长度      情感得分
+0  芝士奶盖绿茶o.O      Recommended   6.6                            \n\t\t\t\t\t对于哈迷来说最棒的游戏     0    17  0.996574
+1       杂乱无章      Recommended   2.2                                     \n\t\t\t\t\t好玩     0     8  0.789474
+2  魔法少女爱莉希雅♪  Not Recommended  24.3  \n\t\t\t\t\t首发预购抢先体验豪华包的，当时直接跑了24个小时，然而游戏正式上线后...     1   149  0.031739
+3        TQB      Recommended   6.4         \n\t\t\t\t\t哈迷真的很爱，秋促价格很不错！随便在霍格沃兹逛一逛都很开心！     0    36  0.999929
+4       漆原琉华      Recommended  29.1                                   \n\t\t\t\t\t优化太烂     0    10  0.061244
+2025-06-19 20:39:15,463 - __main__ - INFO - 已加载 26 个停用词用于文本预处理。
+2025-06-19 20:39:15,463 - __main__ - INFO - 
+开始特征工程...
+2025-06-19 20:39:15,468 - src.features.feature_builder - INFO - 开始文本预处理...
+2025-06-19 20:39:18,479 - src.features.feature_builder - INFO - 文本预处理完成。
+2025-06-19 20:39:36,528 - src.features.feature_builder - INFO - 提取并标准化数值特征...
+2025-06-19 20:39:36,620 - src.features.feature_builder - INFO - 对TF-IDF和CV特征进行PCA降维...
+2025-06-19 20:39:37,452 - src.features.feature_builder - INFO - 特征工程完成，最终特征数量: 19
+2025-06-19 20:39:37,454 - __main__ - INFO - 
+开始运行所有实验...
+2025-06-19 20:39:37,456 - src.models.experiment_runner - INFO - 
+### 开始实验: 轮次一 ###
+2025-06-19 20:39:37,462 - src.models.experiment_runner - INFO - 训练集样本数: 7311, 测试集样本数: 1828
+2025-06-19 20:39:37,462 - src.models.experiment_runner - INFO - 使用的特征: 文本特征: LDA, TF-IDF_PCA, CV_PCA; 数值特征: 评论长度, 情感得分, 句子数, 平均句子长度; PCA: 是
+2025-06-19 20:39:37,462 - src.models.experiment_runner - INFO - 使用的模型: XGBoost, RandomForest, SVM, KNN, DecisionTree
+2025-06-19 20:39:37,462 - src.models.experiment_runner - INFO - 
+训练模型: XGBoost
+2025-06-19 20:39:37,739 - src.models.experiment_runner - INFO - 模型 XGBoost 训练完成并保存到 results/轮次一/XGBoost.pkl。
+2025-06-19 20:39:37,739 - src.models.experiment_runner - INFO - 
+训练模型: RandomForest
+2025-06-19 20:39:40,947 - src.models.experiment_runner - INFO - 模型 RandomForest 训练完成并保存到 results/轮次一/RandomForest.pkl。
+2025-06-19 20:39:40,948 - src.models.experiment_runner - INFO - 
+训练模型: SVM
+2025-06-19 20:39:47,600 - src.models.experiment_runner - INFO - 模型 SVM 训练完成并保存到 results/轮次一/SVM.pkl。
+2025-06-19 20:39:47,600 - src.models.experiment_runner - INFO - 
+训练模型: KNN
+2025-06-19 20:39:47,749 - src.models.experiment_runner - INFO - 模型 KNN 训练完成并保存到 results/轮次一/KNN.pkl。
+2025-06-19 20:39:47,749 - src.models.experiment_runner - INFO - 
+训练模型: DecisionTree
+2025-06-19 20:39:47,982 - src.models.experiment_runner - INFO - 模型 DecisionTree 训练完成并保存到 results/轮次一/DecisionTree.pkl。
+2025-06-19 20:39:48,281 - src.models.experiment_runner - INFO - ROC 曲线已保存到 results/轮次一/roc_curves.png
+2025-06-19 20:39:48,284 - src.models.experiment_runner - INFO - 模型比较表格已保存到 results/轮次一/model_comparison.csv
+2025-06-19 20:39:48,284 - src.models.experiment_runner - INFO - 
+### 开始实验: 轮次二 ###
+2025-06-19 20:39:48,288 - src.models.experiment_runner - INFO - 训练集样本数: 7311, 测试集样本数: 1828
+2025-06-19 20:39:48,288 - src.models.experiment_runner - INFO - 使用的特征: 文本特征: LDA; 数值特征: 评论长度, 情感得分, 句子数, 平均句子长度; PCA: 否
+2025-06-19 20:39:48,288 - src.models.experiment_runner - INFO - 使用的模型: XGBoost, RandomForest, SVM, KNN, DecisionTree
+2025-06-19 20:39:48,288 - src.models.experiment_runner - INFO - 
+训练模型: XGBoost
+2025-06-19 20:39:48,389 - src.models.experiment_runner - INFO - 模型 XGBoost 训练完成并保存到 results/轮次二/XGBoost.pkl。
+2025-06-19 20:39:48,390 - src.models.experiment_runner - INFO - 
+训练模型: RandomForest
+2025-06-19 20:39:50,620 - src.models.experiment_runner - INFO - 模型 RandomForest 训练完成并保存到 results/轮次二/RandomForest.pkl。
+2025-06-19 20:39:50,620 - src.models.experiment_runner - INFO - 
+训练模型: SVM
+2025-06-19 20:39:56,214 - src.models.experiment_runner - INFO - 模型 SVM 训练完成并保存到 results/轮次二/SVM.pkl。
+2025-06-19 20:39:56,214 - src.models.experiment_runner - INFO - 
+训练模型: KNN
+2025-06-19 20:39:56,363 - src.models.experiment_runner - INFO - 模型 KNN 训练完成并保存到 results/轮次二/KNN.pkl。
+2025-06-19 20:39:56,363 - src.models.experiment_runner - INFO - 
+训练模型: DecisionTree
+2025-06-19 20:39:56,460 - src.models.experiment_runner - INFO - 模型 DecisionTree 训练完成并保存到 results/轮次二/DecisionTree.pkl。
+2025-06-19 20:39:56,743 - src.models.experiment_runner - INFO - ROC 曲线已保存到 results/轮次二/roc_curves.png
+2025-06-19 20:39:56,745 - src.models.experiment_runner - INFO - 模型比较表格已保存到 results/轮次二/model_comparison.csv
+2025-06-19 20:39:56,745 - src.models.experiment_runner - INFO - 
+### 开始实验: 轮次三 ###
+2025-06-19 20:39:56,749 - src.models.experiment_runner - INFO - 训练集样本数: 7311, 测试集样本数: 1828
+2025-06-19 20:39:56,749 - src.models.experiment_runner - INFO - 使用的特征: 文本特征: LDA, TF-IDF_PCA; 数值特征: 评论长度, 情感得分, 句子数, 平均句子长度; PCA: 是
+2025-06-19 20:39:56,749 - src.models.experiment_runner - INFO - 使用的模型: XGBoost, RandomForest, SVM, KNN, DecisionTree
+2025-06-19 20:39:56,749 - src.models.experiment_runner - INFO - 
+训练模型: XGBoost
+2025-06-19 20:39:56,874 - src.models.experiment_runner - INFO - 模型 XGBoost 训练完成并保存到 results/轮次三/XGBoost.pkl。
+2025-06-19 20:39:56,874 - src.models.experiment_runner - INFO - 
+训练模型: RandomForest
+2025-06-19 20:39:59,241 - src.models.experiment_runner - INFO - 模型 RandomForest 训练完成并保存到 results/轮次三/RandomForest.pkl。
+2025-06-19 20:39:59,241 - src.models.experiment_runner - INFO - 
+训练模型: SVM
+2025-06-19 20:40:05,037 - src.models.experiment_runner - INFO - 模型 SVM 训练完成并保存到 results/轮次三/SVM.pkl。
+2025-06-19 20:40:05,037 - src.models.experiment_runner - INFO - 
+训练模型: KNN
+2025-06-19 20:40:05,269 - src.models.experiment_runner - INFO - 模型 KNN 训练完成并保存到 results/轮次三/KNN.pkl。
+2025-06-19 20:40:05,269 - src.models.experiment_runner - INFO - 
+训练模型: DecisionTree
+2025-06-19 20:40:05,426 - src.models.experiment_runner - INFO - 模型 DecisionTree 训练完成并保存到 results/轮次三/DecisionTree.pkl。
+2025-06-19 20:40:05,716 - src.models.experiment_runner - INFO - ROC 曲线已保存到 results/轮次三/roc_curves.png
+2025-06-19 20:40:05,718 - src.models.experiment_runner - INFO - 模型比较表格已保存到 results/轮次三/model_comparison.csv
+2025-06-19 20:40:05,811 - __main__ - INFO - 
+=== 总体最佳模型 ===
+2025-06-19 20:40:05,812 - __main__ - INFO - Round                轮次一
+Model       RandomForest
+Accuracy        0.844639
+AUC             0.899113
+2025-06-19 20:40:05,813 - __main__ - INFO - 
+所有实验结果已保存在 results/所有轮次比较.xlsx
+2025-06-19 20:40:05,813 - __main__ - INFO - 模型训练成功完成！
