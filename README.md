@@ -96,7 +96,3 @@ python main.py
 
 Enjoy building your project! 😊
 
-```
-
-This version is cleaner and more structured, making it easier to read and follow for users who are navigating through the README. It also ensures proper markdown formatting for code blocks, tables, and sections.
-```
