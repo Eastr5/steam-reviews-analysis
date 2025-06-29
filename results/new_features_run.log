@@ -1,0 +1,120 @@
+2025-06-29 20:18:26,697 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 20:18:26,749 - INFO - Data loaded successfully from data/labeled_comments.csv
+2025-06-29 20:18:26,749 - ERROR - DataFrame does not contain a 'comment' column. Exiting.
+2025-06-29 20:19:56,084 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 20:19:56,113 - INFO - Data loaded successfully from data/labeled_comments.csv with utf-8 encoding.
+2025-06-29 20:19:56,114 - INFO - Renamed column '评论' to 'comment'.
+2025-06-29 20:19:56,114 - INFO - Renamed column '游戏时长' to 'playtime'.
+2025-06-29 20:19:56,114 - INFO - Renamed column '推荐' to 'recommendation'.
+2025-06-29 20:19:56,114 - INFO - Renamed column '情感得分' to 'emotional_score_from_csv'.
+2025-06-29 20:19:56,115 - WARNING - Missing 'helpful' column, defaulting to 0.
+2025-06-29 20:19:56,125 - WARNING - Missing 'timestamp' column, generating dummy timestamps.
+2025-06-29 20:19:56,133 - INFO - Calculating emotional scores...
+2025-06-29 20:19:56,423 - INFO - Emotional scores calculated.
+2025-06-29 20:19:56,423 - INFO - Calculating rational scores...
+2025-06-29 20:19:56,553 - INFO - Rational scores calculated.
+2025-06-29 20:19:56,553 - INFO - Normalizing key metrics...
+2025-06-29 20:19:56,556 - INFO - Metrics normalized.
+2025-06-29 20:19:56,556 - INFO - Calculating CPIV and VPV scores...
+2025-06-29 20:19:56,558 - INFO - CPIV and VPV scores calculated.
+2025-06-29 20:19:56,558 - INFO - Calculating negative keyword trigger index...
+2025-06-29 20:19:56,563 - INFO - Negative Keyword Trigger Index (last 7 days): 0.1467
+2025-06-29 20:21:02,337 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 20:21:02,366 - INFO - Data loaded successfully from data/labeled_comments.csv with utf-8 encoding.
+2025-06-29 20:21:02,366 - INFO - Renamed column '评论' to 'comment'.
+2025-06-29 20:21:02,367 - INFO - Renamed column '游戏时长' to 'playtime'.
+2025-06-29 20:21:02,367 - INFO - Renamed column '推荐' to 'recommendation'.
+2025-06-29 20:21:02,367 - INFO - Renamed column '情感得分' to 'emotional_score_from_csv'.
+2025-06-29 20:21:02,368 - WARNING - Missing 'helpful' column, defaulting to 0.
+2025-06-29 20:21:02,377 - WARNING - Missing 'timestamp' column, generating dummy timestamps.
+2025-06-29 20:21:02,385 - INFO - Calculating emotional scores...
+2025-06-29 20:21:02,676 - INFO - Emotional scores calculated.
+2025-06-29 20:21:02,676 - INFO - Calculating rational scores...
+2025-06-29 20:21:02,810 - INFO - Rational scores calculated.
+2025-06-29 20:21:02,810 - INFO - Normalizing key metrics...
+2025-06-29 20:21:02,813 - INFO - Metrics normalized.
+2025-06-29 20:21:02,813 - INFO - Calculating CPIV and VPV scores...
+2025-06-29 20:21:02,815 - INFO - CPIV and VPV scores calculated.
+2025-06-29 20:21:02,815 - INFO - Calculating negative keyword trigger index...
+2025-06-29 20:21:02,821 - INFO - Negative Keyword Trigger Index (last 7 days): 0.1467
+2025-06-29 20:21:02,966 - INFO - Results saved successfully to results/new_metrics_analysis/enriched_comments_with_new_metrics.csv
+2025-06-29 20:21:02,966 - INFO - Enriched comments with new metrics saved.
+2025-06-29 20:21:02,966 - INFO - Generating HTML report...
+2025-06-29 20:56:54,220 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 20:56:54,251 - INFO - Data loaded successfully from data/labeled_comments.csv with utf-8 encoding.
+2025-06-29 20:56:54,252 - INFO - Renamed column '评论' to 'comment'.
+2025-06-29 20:56:54,252 - INFO - Renamed column '游戏时长' to 'playtime'.
+2025-06-29 20:56:54,252 - INFO - Renamed column '推荐' to 'recommendation'.
+2025-06-29 20:56:54,253 - INFO - Renamed column '情感得分' to 'emotional_score_from_csv'.
+2025-06-29 20:56:54,254 - WARNING - Missing 'helpful' column, defaulting to 0.
+2025-06-29 20:56:54,264 - WARNING - Missing 'timestamp' column, generating dummy timestamps.
+2025-06-29 20:56:54,273 - INFO - Calculating emotional scores...
+2025-06-29 20:56:54,577 - INFO - Emotional scores calculated.
+2025-06-29 20:56:54,577 - INFO - Calculating rational scores...
+2025-06-29 20:56:54,712 - INFO - Rational scores calculated.
+2025-06-29 20:56:54,712 - INFO - Normalizing key metrics...
+2025-06-29 20:56:54,715 - INFO - Metrics normalized.
+2025-06-29 20:56:54,715 - INFO - Calculating CPIV and VPV scores...
+2025-06-29 20:56:54,717 - INFO - CPIV and VPV scores calculated.
+2025-06-29 20:56:54,717 - INFO - Calculating negative keyword trigger index...
+2025-06-29 20:56:54,721 - INFO - Negative Keyword Trigger Index (last 7 days): 0.1467
+2025-06-29 20:56:54,866 - INFO - Results saved successfully to results/new_metrics_analysis/enriched_comments_with_new_metrics.csv
+2025-06-29 20:56:54,866 - INFO - Enriched comments with new metrics saved.
+2025-06-29 20:56:54,866 - INFO - Generating HTML report...
+2025-06-29 20:57:19,397 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 20:57:19,426 - INFO - Data loaded successfully from data/labeled_comments.csv with utf-8 encoding.
+2025-06-29 20:57:19,428 - WARNING - Missing 'helpful' column, defaulting to 0.
+2025-06-29 20:57:19,437 - WARNING - Missing 'timestamp' column, generating dummy timestamps.
+2025-06-29 20:57:19,447 - INFO - Calculating emotional scores...
+2025-06-29 20:57:19,733 - INFO - Emotional scores calculated.
+2025-06-29 20:57:19,734 - INFO - Calculating rational scores...
+2025-06-29 20:57:19,869 - INFO - Rational scores calculated.
+2025-06-29 20:57:19,869 - INFO - Normalizing key metrics...
+2025-06-29 20:57:19,872 - INFO - Metrics normalized.
+2025-06-29 20:57:19,872 - INFO - Calculating CPIV and VPV scores...
+2025-06-29 20:57:19,874 - INFO - CPIV and VPV scores calculated.
+2025-06-29 20:57:19,874 - INFO - Calculating negative keyword trigger index...
+2025-06-29 20:57:19,878 - INFO - Negative Keyword Trigger Index (last 7 days): 0.1600
+2025-06-29 20:57:20,024 - INFO - Results saved successfully to results/new_metrics_analysis/enriched_comments_with_new_metrics.csv
+2025-06-29 20:57:20,025 - INFO - Enriched comments with new metrics saved.
+2025-06-29 20:57:20,025 - INFO - Generating HTML report...
+2025-06-29 20:58:23,525 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 20:58:23,555 - INFO - Data loaded successfully from data/labeled_comments.csv with utf-8 encoding.
+2025-06-29 20:58:23,556 - WARNING - Missing 'helpful' column, defaulting to 0.
+2025-06-29 20:58:23,566 - WARNING - Missing 'timestamp' column, generating dummy timestamps.
+2025-06-29 20:58:23,574 - INFO - Calculating emotional scores...
+2025-06-29 20:58:23,867 - INFO - Emotional scores calculated.
+2025-06-29 20:58:23,867 - INFO - Calculating rational scores...
+2025-06-29 20:58:23,995 - INFO - Rational scores calculated.
+2025-06-29 20:58:23,995 - INFO - Normalizing key metrics...
+2025-06-29 20:58:23,998 - INFO - Metrics normalized.
+2025-06-29 20:58:23,998 - INFO - Calculating CPIV and VPV scores...
+2025-06-29 20:58:24,000 - INFO - CPIV and VPV scores calculated.
+2025-06-29 20:58:24,000 - INFO - Calculating negative keyword trigger index...
+2025-06-29 20:58:24,006 - INFO - Negative Keyword Trigger Index (last 7 days): 0.1962
+2025-06-29 20:58:24,155 - INFO - Results saved successfully to results/new_metrics_analysis/enriched_comments_with_new_metrics.csv
+2025-06-29 20:58:24,155 - INFO - Enriched comments with new metrics saved.
+2025-06-29 20:58:24,155 - INFO - Generating HTML report...
+2025-06-29 20:58:24,171 - INFO - HTML report generated at results/html_report/analysis_dashboard.html
+2025-06-29 20:58:24,171 - INFO - HTML report generation finished.
+2025-06-29 20:58:24,171 - INFO - New Features Analysis Project finished.
+2025-06-29 21:19:13,843 - INFO - Starting New Features Analysis for Steam Reviews.
+2025-06-29 21:19:13,874 - INFO - Data loaded successfully from data/labeled_comments.csv with utf-8 encoding.
+2025-06-29 21:19:13,876 - WARNING - Missing 'helpful' column, defaulting to 0.
+2025-06-29 21:19:13,885 - WARNING - Missing 'timestamp' column, generating dummy timestamps.
+2025-06-29 21:19:13,894 - INFO - Calculating emotional scores...
+2025-06-29 21:19:14,208 - INFO - Emotional scores calculated.
+2025-06-29 21:19:14,208 - INFO - Calculating rational scores...
+2025-06-29 21:19:14,351 - INFO - Rational scores calculated.
+2025-06-29 21:19:14,351 - INFO - Normalizing key metrics...
+2025-06-29 21:19:14,355 - INFO - Metrics normalized.
+2025-06-29 21:19:14,355 - INFO - Calculating CPIV and VPV scores...
+2025-06-29 21:19:14,357 - INFO - CPIV and VPV scores calculated.
+2025-06-29 21:19:14,357 - INFO - Calculating negative keyword trigger index...
+2025-06-29 21:19:14,363 - INFO - Negative Keyword Trigger Index (last 7 days): 0.1982
+2025-06-29 21:19:14,528 - INFO - Results saved successfully to results/new_metrics_analysis/enriched_comments_with_new_metrics.csv
+2025-06-29 21:19:14,528 - INFO - Enriched comments with new metrics saved.
+2025-06-29 21:19:14,528 - INFO - Generating HTML report...
+2025-06-29 21:19:14,546 - INFO - HTML report generated at results/html_report/analysis_dashboard.html
+2025-06-29 21:19:14,547 - INFO - HTML report generation finished.
+2025-06-29 21:19:14,547 - INFO - New Features Analysis Project finished.

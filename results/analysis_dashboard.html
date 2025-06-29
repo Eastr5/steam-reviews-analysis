@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam 评论分析报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        h1, h2, h3 {
+            color: #1a202c;
+            font-weight: 700;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #edf2f7;
+            font-weight: 600;
+        }
+        .section-card {
+            background-color: #fdfdfd;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .alert-box {
+            background-color: #fee2e2;
+            color: #dc2626;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ef4444;
+        }
+        .business-insight {
+            background-color: #e0f2fe;
+            color: #0c4a6e;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1.5rem;
+            border: 1px solid #38b2ac;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-4xl text-center mb-8">Steam 评论深度分析报告</h1>
+
+        <div class="section-card">
+            <h2 class="text-2xl mb-4">核心指标概览</h2>
+            <p class="text-lg mb-2"><strong>负面关键词触发指数 (近7天):</strong> <span class="text-red-600 text-xl">0.0000</span></p>
+            <!-- 警报信息将由 Python 动态插入 -->
+            <p class="business-insight">
+                <strong>商业建议：</strong> 负面关键词触发指数是一个敏感指标，能快速捕捉用户对特定问题的关注度。当指数达到预设阈值时，应立即启动内部预警机制，并下钻分析具体是哪些关键词的提及率暴增，从而快速定位问题根源（如新版本Bug、服务器问题等）。
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2 class="text-2xl mb-4">用户画像矩阵新思路：感性分数 VS 理性分数</h2>
+            <p class="mb-4">我们引入了**感性分数 (Emotional Score)** 和 **理性分数 (Rational Score)** 来更全面地理解用户评论的内在价值。</p>
+            
+            <h3 class="text-xl mb-3">感性分数 (Emotional Score)</h3>
+            <p class="mb-2">基于 VADER 情感分析库，生成一个 -1 (极度负面) 到 +1 (极度正面) 的复合分数。</p>
+            <p class="business-insight">
+                <strong>商业建议：</strong> 感性分数能有效捕捉用户的情绪倾向，特别适用于处理口语化和包含网络流行语的评论。高感性评论是社区氛围和用户情绪的直接反映，有助于运营团队快速识别用户情绪热点，进行舆情监控和危机管理。
+            </p>
+
+            <h3 class="text-xl mb-3 mt-6">理性分数 (Rational Score)</h3>
+            <p class="mb-2">结合评论长度、平均词长、数字个数和特定关键词个数等维度，量化评论的信息密度和深度。</p>
+            <p class="business-insight">
+                <strong>商业建议：</strong> 理性分数反映了评论的“含金量”。高理性评论通常包含有价值的反馈、技术细节或具体问题描述。产品和开发团队应重点关注高理性评论，从中获取产品改进的直接依据。
+            </p>
+            
+            <h3 class="text-xl mb-3 mt-6">“情感宣泄区”社区 (高感性, 低理性) 评论示例</h3>
+            <p class="mb-2">这类用户是情绪的放大器，喜欢玩梗、跟风，评价通常是“太好玩了！”或“垃圾游戏！”。</p>
+            <!-- 评论示例将由 Python 动态插入 -->
+            <p class="business-insight">
+                <strong>营销策略:</strong> 针对这类社区，应多发起“晒出你的高光时刻”、“最佳吐槽”等话题活动，用奖励刺激用户生产内容。内容推送上，多用表情包、短视频、直播等强视觉、强情感冲击的内容。对于产品，可以针对他们做爆款营销，打造“网红”产品。
+            </p>
+
+            <h3 class="text-xl mb-3 mt-6">“事实陈述区”社区 (低感性, 高理性) 评论示例</h3>
+            <p class="mb-2">这类用户是冷静的观察者和问题的发现者。评价是“更新后FPS从60掉到40”、“3号BOSS有BUG”。</p>
+            <!-- 评论示例将由 Python 动态插入 -->
+            <p class="business-insight">
+                <strong>沟通方式:</strong> 对这类用户，沟通应透明、真诚、高效。发布详细的更新日志（Patch Notes），建立公开的BUG追踪列表。内容推送上，多做技术拆解、数据报告、开发者Q&A。用事实和数据说话。对于产品，应关注其“核心功能”和“性能指标”，用清晰的数据标签来吸引他们。
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2 class="text-2xl mb-4">完善的用户评论评价体系</h2>
+            <p class="mb-4">通过归一化指标，我们定义了两种新的评论价值：</p>
+
+            <h3 class="text-xl mb-3">配置A：“核心玩家深度反馈价值” (CPIV)</h3>
+            <p class="mb-2">精准定位出那些由最资深、最核心的玩家所写的、包含大量事实信息和深度思考的反馈。是产品经理和开发团队最需要倾听的声音。</p>
+            <p class="mb-2"><strong>公式:</strong> $CPIV Score = (0.4 * playtime\_norm) + (0.4 * rational\_norm) + (0.2 * helpful\_norm) + (0.0 * emotional\_norm)$</p>
+            <h4 class="text-lg mb-2 mt-4">高 CPIV 评论示例:</h4>
+            <!-- 评论示例将由 Python 动态插入 -->
+            <p class="business-insight">
+                <strong>商业建议：</strong> 高 CPIV 评论是产品和开发团队的“金矿”。应建立专门的渠道收集和处理这些评论，例如定期评审高 CPIV 评论，将其转化为产品需求或缺陷报告。这些评论通常指向核心痛点或改进方向。
+            </p>
+
+            <h3 class="text-xl mb-3 mt-6">配置B：“病毒式传播潜力价值” (VPV)</h3>
+            <p class="mb-2">识别出那些最有可能在社交媒体上被大量转发、讨论、点赞的“神评”或“爆款差评”。这些评论是市场和运营团队的宝贵素材，它们是品牌口碑的“放大器”和“风向标”。</p>
+            <p class="mb-2"><strong>公式:</strong> $VPV Score = (0.5 * emotional\_norm) + (0.4 * helpful\_norm) + (0.1 * playtime\_norm) + (0.0 * rational\_norm)$</p>
+            <h4 class="text-lg mb-2 mt-4">高 VPV 评论示例:</h4>
+            <!-- 评论示例将由 Python 动态插入 -->
+            <p class="business-insight">
+                <strong>商业建议：</strong> 高 VPV 评论是市场和运营团队的“利器”。可以利用这些评论进行内容营销，例如将“神评”制作成宣传海报、短视频素材，或将“爆款差评”作为改进的公开承诺，展示积极响应用户反馈的态度。
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2 class="text-2xl mb-4">数据指标体系总结与应用</h2>
+            <ul class="list-disc pl-5 mb-4">
+                <li><strong>感性分数 & 理性分数：</strong> 构建用户画像矩阵，区分“情感宣泄区”和“事实陈述区”用户，制定差异化沟通和营销策略。</li>
+                <li><strong>CPIV Score：</strong> 帮助产品和开发团队精准定位核心玩家的深度反馈，指导产品迭代和优化。</li>
+                <li><strong>VPV Score：</strong> 赋能市场和运营团队识别具有病毒式传播潜力的内容，用于品牌宣传和舆情管理。</li>
+                <li><strong>负面关键词触发指数：</strong> 作为早期预警机制，快速发现潜在的产品问题和用户不满，避免舆情扩散。</li>
+            </ul>
+            <p class="business-insight">
+                <strong>整体策略：</strong> 结合这些新的指标，企业可以建立一个更全面、更敏感的用户反馈监控系统。通过自动化这些指标的计算和可视化，可以实现对用户声音的实时洞察，从而更快速、更精准地响应市场变化和用户需求，提升用户满意度和产品竞争力。
+            </p>
+        </div>
+
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            报告生成时间: 2024-01-01 00:00:00 <!-- 占位符，将被 Python 动态替换 -->
+        </footer>
+    </div>
+</body>
+</html>
