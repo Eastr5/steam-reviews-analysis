@@ -196,7 +196,7 @@ python main.py
 
 4. **查看结果**:
 
-➡️ **[点击此处查看新的商业报告网页](./results/html_report/analysis_dashboard.html)**
+➡️ **[点击此处查看新的商业报告网页](https://eastr5.github.io/steam-review-analysis/results/html_report/analysis_dashboard.html)**
 
 ---
 
