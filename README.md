@@ -199,13 +199,6 @@ python main.py
 ➡️ **[点击此处查看新的商业报告网页](./results/html_report/analysis_dashboard,html)**
 
 ---
-### 如何使用
-...
-
-### ✨ 未来可优化方向:
-
-* **模型优化与调参**: 可进一步调优 XGBoost 和 Logistic Regression 的超参数，以提升模型性能。
-* **数据增强**: 增加更多的训练数据或使用数据增强技术来提高模型的泛化能力。
 
  😊
 
